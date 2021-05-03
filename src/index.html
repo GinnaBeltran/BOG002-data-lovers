@@ -2,11 +2,50 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Pokemon Fans!</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
   </head>
+  
   <body>
-    <div id="root"></div>
+    <img class="logo" id="logo" src="../imagenes/logo.png" width="200px" alt="">
+  <div class="inicio"  id="inicio">
+    <div class="contenido" id="contenido">
+      <h2>Hola! aquí podrás encontrar toda la información de tus personajes 
+        favoritos. Sólo da click en la Pokebola y encuéntralos!</h2>
+    </div>
+
+    <div class="pokebola" id="pokebola">
+      <input type="image" src="../imagenes/pokebola_boton.png"/>
+    </div>
+    
+    <div class="bajo" id="bajo">
+      <img class= "imgbajo" id="imgbajo" src="../imagenes/fondo_bajo.png" width="1000px" alt="">
+    </div>  
+</div>     
+
+<div class="contenido1"  id="contenido1">
+  <input type="text" id="busqueda" placeholder="Busca aquí tu personaje">
+  <button id="btnbuscar">Buscar</button>
+  <button type="button" class="btnver-todos" id="todos">Ver todos</button>
+  <select name= "Organizar" class="orden" id="orden"> 
+    <option value="Asendente" class="az" id="az">Ascendente</option>
+    <option value="Descendente" class="za" id="za">Descendente</option>
+  </select>
+
+  <section class="cont-targetas" id="targetaspok">
+    <div class="contenedor-targeta" id="targetas"></div>
+  </section>
+
+
+  <div class="copy" id="copy">  
+    <label id="copyright" for="copyright">Copyright 2021. Ginna Beltran</label>
+   </div>
+  </div>
+
+</div>
+
+  
     <script src="main.js" type="module"></script>
   </body>
 </html>
