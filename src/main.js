@@ -11,10 +11,6 @@ function mostrarTargeta (personajespok){
    TargetasPok.innerHTML= '';
 
 for (let i= 0; i <personajespok.length; i++){
-     /* let namePok= personajespok[i].name;
-     let numPok= personajespok[i].num;
-     let aboutPok= personajespok[i].about;
-     let imgPok= personajespok[i].img; */
 
      let unidadTargeta= document.createElement("div");
      let imgpok= document.createElement("img");
@@ -25,7 +21,7 @@ for (let i= 0; i <personajespok.length; i++){
      imgpok.className="imgTargetas";
      nombres.id="nombresPok";
      nombres.className="nombresPoke";
-     numeros.className="numeroPok";
+     numeros.className="numeroPok"; 
 
 
      imgpok.src= personajespok[i].img;
@@ -48,11 +44,8 @@ function buscarPok(){
     let ingreso= barraBuscar.value;
     console.log(ingreso);
     let resultadoBuscar= filtrarName(ingreso,personajespok);
-    /* mostrarTargeta(resultadoBuscar); */
     let resultadoBuscarNum= filtrarNum(ingreso,personajespok);
-    /* mostrarTargeta(resultadoBuscar); */
     let resultadoBuscarType= filtrarType(ingreso,personajespok);
-    /* mostrarTargeta(resultadoBuscar); */
     let resultadoFinal= resultadoBuscar.concat(resultadoBuscarNum).concat(resultadoBuscarType);
     mostrarTargeta(resultadoFinal);
 }
@@ -63,10 +56,6 @@ const btninicio = document.getElementById("pokebola");
 btninicio.addEventListener("click", function(){
     mostrarhome();
 })
-
-/* btninicio.addEventListener("click", function(){
-    mostrarTargeta();
-}) */
  
 
 // evento mostrar contenido 2
@@ -101,5 +90,6 @@ btntodos.addEventListener("click", function(){
     mostrarTargeta(ordenNumero);
 })
 
+let esmalte= "pintar uñas";
 
 console.log(filtrarName, filtrarNum, filtrarType, ordenPok, ordenNum, data);
